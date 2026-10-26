@@ -1,1 +1,16 @@
+Encrypted DNS database in CSV format
 
+Conditions:
+These are all DNS servers from multiple providers that supports encrypted protocols. All these providers I am showing provides DNSSEC, TLS 1.3, Secure SNI support.
+
+Any cell with “N/A” means that is not available for that provider.
+
+PLAIN DNS (53/UDP or TCP)ENCRYPTED (TCP or UDP)PECULIAR
+PROVIDERSIPv4IPv6DNS64DNS over HTTPS (443/TCP or UDP)DNS over TLS (853/TCP)DNS over QUIC (853/UDP)Oblivious DNS over HTTPS – THIS IS EXPERIMENTALDNS over TOR (9150) – THIS IS EXPERIMENTALiCloud Private Relay
+Google LLC8.8.8.8 & 8.8.4.42001:4860:4860::8888 & 2001:4860:4860::8844https://dns.google/dns-query / https://dns.google/resolve?dns.googleN/AN/AN/AN/A
+Cloudflare Inc (Non-blocking)1.1.1.1 & 1.0.0.12606:4700:4700::1111 & 2606:4700:4700::1001N/Ahttps://cloudflare-dns.com/dns-queryone.one.one.one & cloudflare-dns.comN/AN/AN/AN/A
+Cloudflare Inc (Families malware)1.1.1.2 & 1.0.0.22606:4700:4700::1112 & 2606:4700:4700::1002N/Ahttps://security.cloudflare-dns.com/dns-querysecurity.cloudflare-dns.comN/AN/AN/AN/A
+Cloudflare Inc (Families malware & adult content)1.1.1.3 & 1.0.0.32606:4700:4700::1113 & 2606:4700:4700::1003N/Ahttps://family.cloudflare-dns.com/dns-queryfamily.cloudflare-dns.comN/AN/AN/AN/A
+Cloudflare Inc (Mozilla)N/AN/AN/Ahttps://mozilla.cloudflare-dns.com/dns-querymozilla.cloudflare-dns.comN/AN/AN/AN/A
+Cloudflare Inc (Tor)N/AN/AN/AN/AN/AN/AN/Ahttps://tor.cloudflare-dns.comN/A
+Cloudflare Inc (OdoH)N/AN/AN/AN/AN/AN/Aodoh.cloudflare-dns.com N/AN/A
