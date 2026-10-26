@@ -2,5 +2,6 @@ This repository is going to be about Database about all domains, IP and interist
 
 Currently working in DNS, NTP list in .csv format.
 
-- 
+- Working to fix .csv file.
+  
 Some commnads and scripts need to have kind of knowledge before being executed.
